@@ -55,7 +55,11 @@ class cobaListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              title: Image.asset(gambar[1]),
+              title: Image.asset(
+                gambar[1],
+                width: 350,
+                height: 200,
+              ),
               subtitle: Text('ini subtitle dari ' + gambar[index]),
               //leading: Image.asset(''), // ambil karakter pertama text
             ),
