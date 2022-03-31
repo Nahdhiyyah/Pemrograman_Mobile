@@ -48,7 +48,7 @@ class cobaListView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("My Galery", style: TextStyle(color: Colors.black12, fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.indigo[100],
+        backgroundColor: Colors.indigo[50],
       ),
       body: ListView.builder(
         itemCount: gambar.length,
