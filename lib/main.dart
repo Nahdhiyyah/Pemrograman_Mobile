@@ -60,7 +60,7 @@ class cobaListView extends StatelessWidget {
                 width: 350,
                 height: 200,
               ),
-              subtitle: Text('ini subtitle dari ' + sub[index], style: ,),
+              subtitle: Text('ini subtitle dari ' + sub[index]),
               //leading: Image.asset(''), // ambil karakter pertama text
             ),
           );
