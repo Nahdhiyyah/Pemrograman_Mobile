@@ -64,7 +64,7 @@ class cobaListView extends StatelessWidget {
                 height: 200,
                 fit: BoxFit.cover,
               )),
-              subtitle: Text(sub[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.w200)),
+              subtitle: Text(sub[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.w200, fontSize: 20)),
             ),
           );
         },
