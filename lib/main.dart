@@ -48,7 +48,7 @@ class cobaListView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("My Galery", style: TextStyle(color: Colors.black12, fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.purpleAccent[100],
       ),
       body: ListView.builder(
         itemCount: gambar.length,
@@ -60,7 +60,7 @@ class cobaListView extends StatelessWidget {
                 width: 350,
                 height: 200,
               ),
-              subtitle: Text('ini subtitle dari ' + sub[index]),
+              subtitle: Text(sub[index]),
               //leading: Image.asset(''), // ambil karakter pertama text
             ),
           );
