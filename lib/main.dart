@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
 }
 
 class cobaListView extends StatelessWidget {
-  final List gambar = [
+  final List<String> gambar = [
     "assets/images/1.jpg",
     "assets/images/2.jpg",
     "assets/images/3.jpg",
@@ -28,6 +28,21 @@ class cobaListView extends StatelessWidget {
     "assets/images/10.jpg",
     "assets/images/11.jpg",
   ];
+
+  final List<String> sub = [
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar',
+    'Gambar'
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,12 +55,10 @@ class cobaListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-                title: Text(gambar[index], style: TextStyle(fontSize: 30)),
-                subtitle: Text('ini subtitle dari ' + gambar[index]),
-                leading: CircleAvatar(
-                  child: Text(gambar[index][0], // ambil karakter pertama text
-                      style: TextStyle(fontSize: 20)),
-                )),
+              title: Image.asset(gambar[1]),
+              subtitle: Text('ini subtitle dari ' + gambar[index]),
+              leading: Image.asset(''), // ambil karakter pertama text
+            ),
           );
         },
         //itemCount: gambar.length,
