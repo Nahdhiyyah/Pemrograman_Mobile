@@ -57,7 +57,7 @@ class cobaListView extends StatelessWidget {
             child: ListTile(
               title: Image.asset(gambar[1]),
               subtitle: Text('ini subtitle dari ' + gambar[index]),
-              leading: Image.asset(''), // ambil karakter pertama text
+              //leading: Image.asset(''), // ambil karakter pertama text
             ),
           );
         },
