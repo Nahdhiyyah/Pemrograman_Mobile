@@ -59,7 +59,7 @@ class cobaListView extends StatelessWidget {
             child: ListTile(
               title: Image.asset(
                 gambar[index],
-                width: 350,
+                //width: 350,
                 height: 200,
               ),
               subtitle: Text(sub[index]),
