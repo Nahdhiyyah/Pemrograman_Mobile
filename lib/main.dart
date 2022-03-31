@@ -30,17 +30,17 @@ class cobaListView extends StatelessWidget {
   ];
 
   final List<String> sub = [
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar',
-    'Gambar'
+    'Gambar 1',
+    'Gambar 2',
+    'Gambar 3',
+    'Gambar 4',
+    'Gambar 5',
+    'Gambar 6',
+    'Gambar 7',
+    'Gambar 8',
+    'Gambar 9',
+    'Gambar 10',
+    'Gambar 11'
   ];
 
   @override
@@ -48,7 +48,7 @@ class cobaListView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("My Galery", style: TextStyle(color: Colors.black12, fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.purpleAccent[100],
+        backgroundColor: Colors.deepPurple[100],
       ),
       body: ListView.builder(
         itemCount: gambar.length,
@@ -61,11 +61,9 @@ class cobaListView extends StatelessWidget {
                 height: 200,
               ),
               subtitle: Text(sub[index]),
-              //leading: Image.asset(''), // ambil karakter pertama text
             ),
           );
         },
-        //itemCount: gambar.length,
       ),
     );
   }
