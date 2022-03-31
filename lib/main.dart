@@ -57,9 +57,12 @@ class cobaListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              title: Image.asset(
+              title: ClipRRect(
+                  child: Image.asset(
                 gambar[index],
-              ),
+                width: 350,
+                height: 200,
+              )),
               subtitle: Text(sub[index]),
             ),
           );
