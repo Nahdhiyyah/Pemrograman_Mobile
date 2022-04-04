@@ -36,8 +36,8 @@ class movie extends StatelessWidget {
           return Card(
             child: ListTile(
               leading: Image.asset(foto[index], width: 50, height: 50, fit: BoxFit.cover),
-              title: Text(judul[index]),
-              subtitle: Text(artis[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 15)),
+              title: Text(judul[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 15)),
+              subtitle: Text(artis[index]),
             ),
           );
         },
