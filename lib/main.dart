@@ -35,7 +35,7 @@ class BelajarAppBar extends StatelessWidget {
                     centerTitle: true,
                     title: Text("Nadia's List",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.pink[100],
                           fontSize: 18.0,
                         )),
                     background: Image(
