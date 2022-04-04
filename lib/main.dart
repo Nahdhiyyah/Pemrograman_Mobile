@@ -32,7 +32,7 @@ class BelajarAppBar extends StatelessWidget {
                   title: Text("Belajar SliverAppBar",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20.0,
+                        fontSize: 18.0,
                       )),
                   background: Image(
                     image: AssetImage('assets/images/15.jpg'),
