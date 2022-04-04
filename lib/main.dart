@@ -90,9 +90,7 @@ class BelajarAppBar extends StatelessWidget {
                 ),
               ];
             },
-            body: TabBarView(children: <Widget>[
-              ListTile(title: Text("Nadia")),
-            ])),
+            body: TabBarView(children: <Widget>[])),
       ),
     );
   }
