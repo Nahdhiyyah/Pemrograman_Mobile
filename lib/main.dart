@@ -63,9 +63,6 @@ class BelajarAppBar extends StatelessWidget {
               ),
             ];
           },
-          body: ListTile(
-            title: Text(lagu[1]),
-          ),
         ),
       ),
     );
