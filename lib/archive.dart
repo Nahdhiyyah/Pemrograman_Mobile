@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class arsip extends StatelessWidget {
+class favorit extends StatelessWidget {
   final List<String> gambar = [
     "assets/images/1.jpg",
     "assets/images/1.jpg",
