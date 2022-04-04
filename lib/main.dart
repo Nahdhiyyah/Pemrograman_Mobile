@@ -54,8 +54,8 @@ class BelajarAppBar extends StatelessWidget {
                       unselectedLabelColor: Colors.grey,
                       tabs: [
                         new Tab(icon: new Icon(Icons.audiotrack), text: "Lagu"),
+                        new Tab(icon: new Icon(Icons.movie), text: "Video"),
                         new Tab(icon: new Icon(Icons.favorite), text: "Favorit"),
-                        new Tab(icon: new Icon(Icons.archive), text: "Arsip"),
                       ],
                     ),
                   ),
