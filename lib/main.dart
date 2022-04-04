@@ -33,11 +33,47 @@ class BelajarAppBar extends StatelessWidget {
                         background: Image(
                           image: AssetImage('assets/images/13.jpg'),
                           fit: BoxFit.cover,
-                        )))
+                        ))),
+                SliverPersistentHeader(
+                  pinned: true,
+                  delegate: _SliverAppBarDelegate(
+                    TabBar(
+                      labelColor: Colors.black87,
+                      unselectedLabelColor: Colors.grey,
+                      tabs: [
+                        new Tab(icon: new Icon(Icons.audiotrack), text: "Songs"),
+                        new Tab(icon: new Icon(Icons.collections), text: "Gallery"),
+                      ],
+                    ),
+                  ),
+                )
               ];
             },
             body: Center(
               child: Text("Gambar Kiyowo"),
             )));
+  }
+}
+
+class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
+  _SliverAppBarDelegate(this._tabBar);
+
+  final TabBar _tabBar;
+
+  @override
+  double get minExtent => _tabBar.preferredSize.height;
+  @override
+  double get maxExtent => _tabBar.preferredSize.height;
+
+  @override
+  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+    return new Container(
+      child: _tabBar,
+    );
+  }
+
+  @override
+  bool shouldRebuild(_SliverAppBarDelegate oldDelegate) {
+    return false;
   }
 }
