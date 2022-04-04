@@ -28,7 +28,7 @@ class favorit extends StatelessWidget {
           return Card(
             child: ListTile(
               leading: Image.asset(gambar[index], width: 50, height: 50, fit: BoxFit.cover),
-              title: Text(judul[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 15)),
+              title: Text(judul[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 17)),
               subtitle: Text(artis[index]),
             ),
           );
