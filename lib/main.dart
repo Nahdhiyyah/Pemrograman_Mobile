@@ -1,41 +1,13 @@
 import 'package:flutter/material.dart';
+
+import 'https://flutlab.io/root/app/lib/archive.dart';
+import 'https://flutlab.io/root/app/lib/koleksi.dart';
+import 'https://flutlab.io/root/app/lib/song.dart';
 //import 'lagu.dart' as lagu;
 
 void main() {
   runApp(MyApp());
 }
-
-final List<String> lagu = [
-  "Lagu 1",
-  "Lagu 2",
-  "Lagu 3"
-];
-
-// class lagu {
-//   lagu() {
-//     final List<String> lagu = [
-//       "Lagu 1",
-//       "Lagu 2",
-//       "Lagu 3"
-//     ];
-//   }
-// }
-
-// class galeri {
-//   final List<String> video = [
-//     "Video 1",
-//     "Video 2",
-//     "Video 3"
-//   ];
-// }
-
-// class archive {
-//   final List<String> arsip = [
-//     "Lagu 1",
-//     "Lagu 2",
-//     "Lagu 3"
-//   ];
-// }
 
 class MyApp extends StatelessWidget {
   @override
@@ -90,7 +62,11 @@ class BelajarAppBar extends StatelessWidget {
                 ),
               ];
             },
-            body: TabBarView(children: <Widget>[])),
+            body: TabBarView(children: <Widget>[
+              new musik(),
+              new galery(),
+              new arsip()
+            ])),
       ),
     );
   }
