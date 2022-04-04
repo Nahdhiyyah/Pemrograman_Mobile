@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class musik extends StatelessWidget {
+class music extends StatelessWidget {
   final List<String> lagu = [
     "Berisik",
     "Without You",

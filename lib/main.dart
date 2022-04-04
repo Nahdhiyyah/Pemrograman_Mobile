@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'archive.dart';
-import 'koleksi.dart';
-import 'song.dart';
+import 'movie.dart';
+import 'music.dart';
+import 'favorit.dart';
 
 void main() {
   runApp(MyApp());
@@ -61,8 +61,8 @@ class BelajarAppBar extends StatelessWidget {
               ];
             },
             body: TabBarView(children: <Widget>[
-              new musik(),
-              new galery(),
+              new music(),
+              new movie(),
               new favorit()
             ])),
       ),
