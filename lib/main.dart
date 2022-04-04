@@ -51,7 +51,7 @@ class BelajarAppBar extends StatelessWidget {
                   delegate: _SliverAppBarDelegate(
                     TabBar(
                       labelColor: Colors.black87,
-                      unselectedLabelColor: Colors.red[200],
+                      unselectedLabelColor: Colors.grey,
                       tabs: [
                         new Tab(icon: new Icon(Icons.audiotrack), text: "Lagu"),
                         new Tab(icon: new Icon(Icons.favorite), text: "Favorit"),
@@ -84,9 +84,7 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
 
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return new Container(
-      child: _tabBar,
-    );
+    return new Container(child: _tabBar, color: Colors.red[200]);
   }
 
   @override
