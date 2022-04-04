@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'archive.dart';
 import 'koleksi.dart';
@@ -28,7 +30,7 @@ class BelajarAppBar extends StatelessWidget {
               return <Widget>[
                 SliverAppBar(
                   expandedHeight: 200.0,
-                  floating: false,
+                  floating: true,
                   pinned: true,
                   flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
@@ -45,7 +47,7 @@ class BelajarAppBar extends StatelessWidget {
                   backgroundColor: Colors.black,
                 ),
                 SliverPersistentHeader(
-                  pinned: false,
+                  pinned: true,
                   delegate: _SliverAppBarDelegate(
                     TabBar(
                       labelColor: Colors.black87,
