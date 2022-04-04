@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'https://flutlab.io/root/app/lib/archive.dart';
-import 'https://flutlab.io/root/app/lib/koleksi.dart';
-import 'https://flutlab.io/root/app/lib/song.dart';
-//import 'lagu.dart' as lagu;
+import 'archive.dart';
+import 'koleksi.dart';
+import 'song.dart';
 
 void main() {
   runApp(MyApp());
