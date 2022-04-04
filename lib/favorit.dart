@@ -22,18 +22,34 @@ class favorit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
-        itemCount: gambar.length,
-        itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              leading: Image.asset(gambar[index], width: 50, height: 50, fit: BoxFit.cover),
-              title: Text(judul[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 17)),
-              subtitle: Text(artis[index]),
-            ),
-          );
-        },
-      ),
-    );
+        body: new Container(
+            child: ListView(
+      children: [
+        ListTile(
+          leading: Icon(Icons.play_arrow),
+          title: Text('Berisik'),
+        ),
+        ListTile(
+          leading: Icon(Icons.play_arrow),
+          title: Text('Without You'),
+        ),
+        ListTile(
+          leading: Icon(Icons.movie),
+          title: Text('Up'),
+        ),
+        ListTile(
+          leading: Icon(Icons.movie),
+          title: Text('Hati-hati Di Jalan'),
+        ),
+        ListTile(
+          leading: Icon(Icons.play_arrow),
+          title: Text('Happy'),
+        ),
+        ListTile(
+          leading: Icon(Icons.movie_filter),
+          title: Text('Attention'),
+        ),
+      ],
+    )));
   }
 }
