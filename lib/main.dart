@@ -85,7 +85,7 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
     return new Container(
       child: _tabBar,
       color: Colors.pink[50],
-      decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.pinkAccent))),
+      decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.pink))),
     );
   }
 
