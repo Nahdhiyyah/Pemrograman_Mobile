@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 
 class musik extends StatelessWidget {
   final List<String> lagu = [
-    "lagu 1",
-    "lagu 2",
-    "lagu 3"
+    "Berisik",
+    "Without You",
+    "Up",
+    "Hati-hati Di jalan",
+    "Happy",
+    "Attention"
   ];
   final List<String> artis = [
-    "artis 1",
-    "artis 2",
-    "artis 3"
+    "Dere",
+    "Avicii",
+    "Inna",
+    "Tulus",
+    "Skinnyfabs",
+    "Charlie Puth"
   ];
 
   @override
