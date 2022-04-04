@@ -3,13 +3,28 @@ import 'package:flutter/material.dart';
 class movie extends StatelessWidget {
   final List<String> foto = [
     "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg"
+    "assets/images/2.jpg",
+    "assets/images/3.jpg",
+    "assets/images/4.jpg",
+    "assets/images/5.jpg",
+    "assets/images/6.jpg"
   ];
   final List<String> judul = [
-    "Judul 1",
-    "Judul 2",
-    "Judul 3"
+    "Berisik",
+    "Without You",
+    "Up",
+    "Hati-hati Di Jalan",
+    "Happy",
+    "Attention"
+  ];
+
+  final List<String> artis = [
+    "Dere",
+    "Avicii",
+    "Inna",
+    "Tulus",
+    "Skinnyfabs",
+    "Charlie Puth"
   ];
 
   @override
@@ -22,7 +37,7 @@ class movie extends StatelessWidget {
             child: ListTile(
               leading: Image.asset(foto[index]),
               title: Text(judul[index]),
-              subtitle: Text(judul[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 15)),
+              subtitle: Text(artis[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 15)),
             ),
           );
         },
