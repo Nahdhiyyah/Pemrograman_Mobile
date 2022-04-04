@@ -31,23 +31,23 @@ class favorit extends StatelessWidget {
         ),
         ListTile(
           leading: Icon(Icons.play_arrow),
-          title: Text('Without You'),
+          title: Text('Without You', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
         ),
         ListTile(
           leading: Icon(Icons.movie),
-          title: Text('Up'),
+          title: Text('Up', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
         ),
         ListTile(
           leading: Icon(Icons.movie),
-          title: Text('Hati-hati Di Jalan'),
+          title: Text('Hati-hati Di Jalan', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
         ),
         ListTile(
           leading: Icon(Icons.play_arrow),
-          title: Text('Happy'),
+          title: Text('Happy', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
         ),
         ListTile(
           leading: Icon(Icons.movie),
-          title: Text('Attention'),
+          title: Text('Attention', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
         ),
       ],
     )));
