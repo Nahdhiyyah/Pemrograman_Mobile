@@ -28,7 +28,7 @@ class BelajarAppBar extends StatelessWidget {
               return <Widget>[
                 SliverAppBar(
                   expandedHeight: 200.0,
-                  floating: true,
+                  floating: false,
                   pinned: true,
                   flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
