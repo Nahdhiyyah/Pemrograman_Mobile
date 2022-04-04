@@ -39,7 +39,7 @@ class BelajarAppBar extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-                backgroundColor: Colors.black12,
+                backgroundColor: Colors.black54,
               ),
               SliverPersistentHeader(
                 pinned: true,
