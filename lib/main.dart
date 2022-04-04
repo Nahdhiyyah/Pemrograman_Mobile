@@ -5,6 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -14,44 +15,52 @@ class MyApp extends StatelessWidget {
 }
 
 class BelajarAppBar extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: NestedScrollView(
-            headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-              return <Widget>[
-                SliverAppBar(
-                    expandedHeight: 200.0,
-                    floating: false,
-                    pinned: true,
-                    flexibleSpace: FlexibleSpaceBar(
-                        centerTitle: true,
-                        title: Text("Belajar Sliver App Bar",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                            )),
-                        background: Image(
-                          image: AssetImage('assets/images/13.jpg'),
-                          fit: BoxFit.cover,
-                        ))),
-                SliverPersistentHeader(
-                  pinned: true,
-                  delegate: _SliverAppBarDelegate(
-                    TabBar(
-                      labelColor: Colors.black87,
-                      unselectedLabelColor: Colors.grey,
-                      tabs: [
-                        new Tab(icon: new Icon(Icons.audiotrack), text: "Songs"),
-                        new Tab(icon: new Icon(Icons.collections), text: "Gallery"),
-                      ],
-                    ),
+      body: DefaultTabController(
+        length: 2,
+        child: NestedScrollView(
+          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+            return <Widget>[
+              SliverAppBar(
+                expandedHeight: 200.0,
+                floating: false,
+                pinned: true,
+                flexibleSpace: FlexibleSpaceBar(
+                  centerTitle: true,
+                  title: Text("Belajar SliverAppBar",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      )),
+                  background: Image(
+                    image: AssetImage('assets/images/13.jpg'),
+                    fit: BoxFit.cover,
                   ),
-                )
-              ];
-            },
-            body: Center(
-              child: Text("Gambar Kiyowo"),
-            )));
+                ),
+              ),
+              SliverPersistentHeader(
+                pinned: true,
+                delegate: _SliverAppBarDelegate(
+                  TabBar(
+                    labelColor: Colors.black87,
+                    unselectedLabelColor: Colors.grey,
+                    tabs: [
+                      new Tab(icon: new Icon(Icons.audiotrack), text: "Songs"),
+                      new Tab(icon: new Icon(Icons.collections), text: "Gallery"),
+                    ],
+                  ),
+                ),
+              ),
+            ];
+          },
+          body: Center(
+            child: Text("BabyMetal di flutter"),
+          ),
+        ),
+      ),
+    );
   }
 }
 
