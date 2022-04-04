@@ -4,6 +4,12 @@ void main() {
   runApp(MyApp());
 }
 
+final List<String> lagu = [
+  "Lagu 1",
+  "Lagu 2",
+  "Lagu 3"
+];
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -48,7 +54,7 @@ class BelajarAppBar extends StatelessWidget {
                     labelColor: Colors.black87,
                     unselectedLabelColor: Colors.grey,
                     tabs: [
-                      new Tab(icon: new Icon(Icons.audiotrack), text: "Lagu"),
+                      new Tab(icon: new Icon(Icons.audiotrack), text: "Lagu", child: ListTile(title: Text("Lagu"))),
                       new Tab(icon: new Icon(Icons.collections), text: "Galeri"),
                       new Tab(icon: new Icon(Icons.archive), text: "Arsip"),
                     ],
