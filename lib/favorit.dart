@@ -46,7 +46,7 @@ class favorit extends StatelessWidget {
           title: Text('Happy'),
         ),
         ListTile(
-          leading: Icon(Icons.movie_filter),
+          leading: Icon(Icons.movie),
           title: Text('Attention'),
         ),
       ],
