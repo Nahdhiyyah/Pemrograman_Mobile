@@ -64,7 +64,7 @@ class BelajarAppBar extends StatelessWidget {
             ];
           },
           body: ListTile(
-            title: Text("BabyMetal di flutter"),
+            title: Text(lagu[1]),
           ),
         ),
       ),
