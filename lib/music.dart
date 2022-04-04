@@ -26,7 +26,10 @@ class music extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              leading: Icon(Icons.play_arrow),
+              leading: Icon(
+                Icons.play_arrow,
+                color: Colors.black,
+              ),
               title: Text(lagu[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
               subtitle: Text(artis[index]),
             ),
