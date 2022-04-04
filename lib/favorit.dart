@@ -2,14 +2,21 @@ import 'package:flutter/material.dart';
 
 class favorit extends StatelessWidget {
   final List<String> gambar = [
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg"
+    "assets/images/4.jpg",
+    "assets/images/5.jpg",
+    "assets/images/6.jpg"
   ];
-  final List<String> nama = [
-    "Judul 1",
-    "Judul 2",
-    "Judul 3"
+
+  final List<String> judul = [
+    "Hati-hati Di Jalan",
+    "Happy",
+    "Attention"
+  ];
+
+  final List<String> artis = [
+    "Tulus",
+    "Skinnyfabs",
+    "Charlie Puth"
   ];
 
   @override
@@ -20,8 +27,9 @@ class favorit extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              title: Image.asset(gambar[index], width: 350, height: 200, fit: BoxFit.cover),
-              subtitle: Text(nama[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 15)),
+              leading: Image.asset(gambar[index], width: 50, height: 50, fit: BoxFit.cover),
+              title: Text(judul[index]),
+              subtitle: Text(artis[index], style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold, fontSize: 15)),
             ),
           );
         },
