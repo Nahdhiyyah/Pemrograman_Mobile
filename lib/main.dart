@@ -31,7 +31,7 @@ class BelajarAppBar extends StatelessWidget {
                   centerTitle: true,
                   title: Text("Belajar SliverAppBar",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 20.0,
                       )),
                   background: Image(
