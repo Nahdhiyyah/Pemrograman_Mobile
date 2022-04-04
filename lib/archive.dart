@@ -15,12 +15,6 @@ class arsip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text("My Galery", style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold)),
-        ),
-        backgroundColor: Colors.red[200],
-      ),
       body: ListView.builder(
         itemCount: gambar.length,
         itemBuilder: (context, index) {
